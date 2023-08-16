@@ -17,33 +17,40 @@
 
 ## Folder structure
 
-We support a collection of templates, organized in this way:
+我们支持一组模板，以这种方式组织：
 
-- The root folder contains templates in common use, to help people get started
-  with popular programming languages and technologies. These define a meaningful
-  set of rules to help get started, and ensure you are not committing
-  unimportant files into your repository.
-- [`Global`](./Global) contains templates for various editors, tools and
-  operating systems that can be used in different situations. It is recommended
-  that you either [add these to your global template](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files#configuring-ignored-files-for-all-repositories-on-your-computer)
-  or merge these rules into your project-specific templates if you want to use
-  them permanently.
-- [`community`](./community) contains specialized templates for other popular
-  languages, tools and project, which don't currently belong in the mainstream
-  templates. These should be added to your project-specific templates when you
-  decide to adopt the framework or tool.
+- T根文件夹包含常见使用的模板，以帮助人们开始使用流行的编程语言和技术。这些定义了一组有意义的规则，以帮助入门，并确保您不会将不重要的文件提交到存储库中。
+- [`Global`](./Global) 包含用于不同情况的各种编辑器、工具和操作系统的模板。建议您将这些模板[添加到全局模板中](https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files#configuring-ignored-files-for-all-repositories-on-your-computer)，或者将这些规则合并到项目特定的模板中，如果您想要永久使用它们的话。
+- [`community`](./community) 包含其他流行语言、工具和项目的专门模板，这些模板目前不属于主流模板。当您决定采用框架或工具时，应将其添加到项目特定的模板中。
 
 ## What makes a good template?
 
-A template should contain a set of rules to help Git repositories work with a
-specific programming language, framework, tool or environment.
+模板应包含一组规则，以帮助 Git 存储库与特定的编程语言、框架、工具或环境配合工作。
 
-If it's not possible to curate a small set of useful rules for this situation,
-then the template is not a good fit for this collection.
+如果无法为这种情况策划出一小组有用的规则，那么该模板就不适合放入这个集合中。
 
-If a template is mostly a list of files installed by a particular version of
-some software (e.g. a PHP framework), it could live under the `community`
-directory. See [versioned templates](#versioned-templates) for more details.
+如果一个模板主要是某个软件的特定版本安装的文件列表（例如 PHP 框架），它可以位于 community 目录下。有关更多详细信息， See [versioned templates](#versioned-templates) for more details.
+
+如果您拥有一小组规则，或者想要支持一种不广泛使用的技术，并且仍然相信这对他人有帮助，请阅读有关专门模板的部分，获取更多详细信息。
+
+如果模板很重要且可见，请在发起拉取请求时提供详细信息。我们可能不会立即接受它，但我们可以根据兴趣将其提升到根目录中。
+
+还请理解，我们无法列出每个曾经存在的工具。我们的目标是策划一个_最常见且有帮助的_模板集合，而不是确保我们涵盖每个可能的项目。如果我们选择不包括您的语言、工具或项目，这并不是因为它不出色。
+
+贡献准则
+我们希望您能帮助我们改进这个项目。为了保持这个集合的高质量，我们要求贡献遵守以下准则。
+
+提供应用程序或项目主页的链接。除非它非常受欢迎，否则维护人员可能不知道或不使用您要更改的语言、框架、编辑器、应用程序或项目。
+
+提供支持您所做更改的文档链接。提供当前、权威的文档，说明被忽略文件的情况最佳。如果没有文档支持您的更改，请尽量解释被忽略文件的用途。
+
+解释为什么要进行更改。即使这似乎是不言自明的，也请花一两句话告诉我们为什么应该进行您的更改或添加。特别是要明确为什么这种更改适用于与适用技术一起工作的_每个人_，而不仅仅适用于您或您的团队。
+
+请考虑您更改的范围。如果您的更改只适用于某种语言或框架，请确保将更改应用于该语言或框架的模板，而不是应用于编辑器、工具或操作系统的模板。
+
+请每次拉取请求只修改一个模板。这有助于保持拉取请求和反馈集中在特定项目或技
+
+
 
 If you have a small set of rules, or want to support a technology that is not
 widely in use, and still believe this will be helpful to others, please read the
